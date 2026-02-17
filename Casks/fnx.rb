@@ -11,6 +11,11 @@ cask "fnx" do
 
   app "FnX.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/FnX.app"]
+  end
+
   zap trash: [
     "~/Library/Preferences/com.fnx.app.plist",
   ]
