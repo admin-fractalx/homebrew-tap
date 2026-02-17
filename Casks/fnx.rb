@@ -1,6 +1,6 @@
 cask "fnx" do
-  version "1.0.2"
-  sha256 "6b819eea5170400c231c94c988306d78b71dfd8f637c90c0bdcb9bc0788a854a"
+  version "1.0.3"
+  sha256 "dc271ca8a3a6a71e3654209306d80cc03e407cb02f1068c874e3416b649a6ac3"
 
   url "https://github.com/admin-fractalx/fnx-mac/releases/download/v#{version}/FnX-#{version}.zip"
   name "FnX"
