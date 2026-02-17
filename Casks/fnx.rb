@@ -1,6 +1,6 @@
 cask "fnx" do
-  version "1.0.4"
-  sha256 "3d863b483fa3f4a809b0b28d243f5dc2b16fcf0b11ec9ad766d3f7cb918cdaea"
+  version "1.0.5"
+  sha256 "759a0f4950a95c665decef3acd0c6fed76bb04d8a93a2a9430e12b0e09046bdb"
 
   url "https://github.com/admin-fractalx/fnx-mac/releases/download/v#{version}/FnX-#{version}.zip"
   name "FnX"
@@ -13,7 +13,7 @@ cask "fnx" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/FnX.app"]
+                   args: ["-cr", "\#{appdir}/FnX.app"]
   end
 
   zap trash: [
